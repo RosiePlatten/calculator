@@ -3,7 +3,23 @@
     src: URL("Orbitron-VariableFont_wght.ttf") format("truetype") ;
 }
 button{
-    font-family: "orbitron";  
+    font-family: "orbitron";
+    border-radius: 100%;
+    border-style: solid;
+}
+.numbers{
+    background-color: lightgray;
+    border-color: lightgray;
+}
+.numbers:hover{
+    background-color: darkgray;
+}
+.operators{
+    background-color: darkgray;
+    background-color: darkgray;
+}
+.operators:hover{
+    background-color: lightgray;
 }
 #calculator{
     height: 500px;
@@ -12,9 +28,21 @@ button{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(5,1fr);
     font-family: "orbitron";
+    margin: auto;
+    background-color:grey;
+    border-color: darkgray;
+    border-style: groove;
+    border-radius: 15px;
 }
 #display{
     grid-area: 1/1/2/4;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 50px;
+    text-align: center;
+    font-size: xx-large ;
+    line-height: 100px;
 }
 #zero{
     grid-area: 2 / 1 / 3 /2 ;
@@ -60,4 +88,9 @@ button{
 }
 #clear{
     grid-area: 4/5/5/7;
+    background-color: darkgray;
+    background-color: darkgray;
+}
+#clear:hover{
+    background-color: lightgray;
 }
